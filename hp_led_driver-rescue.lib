@@ -1,0 +1,63 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# C-charger_stepup-cache
+#
+DEF C-charger_stepup-cache C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "C-charger_stepup-cache" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED-charger_stepup-cache
+#
+DEF LED-charger_stepup-cache D 0 40 Y N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "LED-charger_stepup-cache" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# TC4420-User
+#
+DEF TC4420-User U 0 40 Y Y 1 F N
+F0 "U" 550 -600 50 H V C CNN
+F1 "TC4420-User" 100 -350 50 H V C CNN
+F2 "Package_DIP:DIP-8_W7.62mm" 550 -600 50 H V C CNN
+F3 "" 550 -600 50 H V C CNN
+DRAW
+S -300 -50 500 -600 0 1 0 N
+X VDD 1 50 50 100 D 50 50 1 1 I
+X Input 2 -400 -250 100 R 50 50 1 1 I
+X nc 3 -400 -400 100 R 50 50 1 1 N
+X Gnd 4 50 -700 100 U 50 50 1 1 O
+X Gnd 5 200 -700 100 U 50 50 1 1 O
+X OutA 6 600 -400 100 L 50 50 1 1 O
+X OutB 7 600 -250 100 L 50 50 1 1 O
+X VDD 8 200 50 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
